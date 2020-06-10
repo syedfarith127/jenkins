@@ -1,0 +1,162 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 38871917400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has to be there in the FB login page",
+            "match": {
+              "location": "FBLoginPageStpes.user_has_to_be_there_in_the_FB_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T03:18:17.444Z",
+        "line": 6,
+        "name": "To verify the user can able login with incorrect credentials",
+        "description": "",
+        "id": "to-validate-the-login-functionality;to-verify-the-user-can-able-login-with-incorrect-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 868890400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User has to fill the username and password",
+            "match": {
+              "location": "FBLoginPageStpes.user_has_to_fill_the_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password",
+                  "firstname"
+                ]
+              },
+              {
+                "cells": [
+                  "Rajesh",
+                  "1321313",
+                  "Syed"
+                ]
+              },
+              {
+                "cells": [
+                  "Suresh",
+                  "qwrqeqr",
+                  "Farith"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167393800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "FBLoginPageStpes.user_clicks_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c...://www.facebook.com/[login/device-based/regular/login/?login_attempt\u003d1\u0026lwv\u003d110]\u003e but was:\u003c...://www.facebook.com/[]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat org.stepdefinition.FBLoginPageStpes.verify_user_is_naviagting_the_login_page(FBLoginPageStpes.java:49)\r\n\tat ✽.Verify user is naviagting the login page(file:src/test/resources/fblogin.feature:14)\r\n",
+              "duration": 5068184500,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "Verify user is naviagting the login page",
+            "match": {
+              "location": "FBLoginPageStpes.verify_user_is_naviagting_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6597356400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has to be there in the FB login page",
+            "match": {
+              "location": "FBLoginPageStpes.user_has_to_be_there_in_the_FB_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-10T03:19:02.710Z",
+        "line": 17,
+        "name": "To verify the user can create an account",
+        "description": "",
+        "id": "to-validate-the-login-functionality;to-verify-the-user-can-create-an-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d81.0.4044.129)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-QUNU5J4I\u0027, ip: \u0027192.168.43.164\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\\Users\\HAIGUY~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:65423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: caa7a3681846b3bd066fc37ad5299677\n*** Element info: {Using\u003did, value\u003du_0_13}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.stepdefinition.FBLoginPageStpes.user_has_to_fill_firstname_lastname_mobileno_dob_and_clicks_the_signup_button(FBLoginPageStpes.java:57)\r\n\tat ✽.User has to fill firstname.lastname,mobileno,dob and clicks the signup button(file:src/test/resources/fblogin.feature:19)\r\n",
+              "duration": 956718500,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "User has to fill firstname.lastname,mobileno,dob and clicks the signup button",
+            "match": {
+              "location": "FBLoginPageStpes.user_has_to_fill_firstname_lastname_mobileno_dob_and_clicks_the_signup_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 935100,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user can able to create an account successfully",
+            "match": {
+              "location": "FBLoginPageStpes.user_can_able_to_create_an_account_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Login functionality",
+    "description": "",
+    "id": "to-validate-the-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/fblogin.feature",
+    "tags": []
+  }
+]
