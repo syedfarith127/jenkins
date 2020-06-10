@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;//4.8.0
 
 @RunWith(Cucumber.class) //Runwith(Suite.class)
 @CucumberOptions(features="src/test/resources",glue="org.stepdefinition",dryRun=false,plugin= { //Suite.SuiteClasses(A.class)
-"html:target","json:target\\output.json"})
+"html:target","json:target/out.json"})
 public class TestRunnerClass {
 	
 	//features denotes feature file path
